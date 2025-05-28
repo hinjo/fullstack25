@@ -7,6 +7,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
+    // fetch("https://fullstack25-o6y1.onrender.com/api")
+    // fetch("http:/localhost/api")
     fetch("/api")
       .then((response) => response.json())
       .then((result) => {
@@ -17,7 +19,7 @@ function App() {
   return (
     <>
       <div>
-        Heeej
+        Heeej 🙌
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
